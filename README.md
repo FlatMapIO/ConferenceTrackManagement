@@ -27,6 +27,7 @@ You are planning a big programming conference and have received many proposals w
 Note that depending on how you choose to complete this problem, your solution may give a different ordering or combination of talks into tracks. This is acceptable; you don’t need to exactly duplicate the sample output given here.
 
 ### Test input:
+```
 Writing Fast Tests Against Enterprise Rails 60min
 Overdoing it in Python 45min
 Lua for the Masses 30min
@@ -46,10 +47,11 @@ Ruby vs. Clojure for Back-End Development 30min
 Ruby on Rails Legacy App Maintenance 60min
 A World Without HackerNews 30min
 User Interface CSS in Rails Apps 30min
-
+```
 
 ### Test output:
 #### Track 1:
+```
 09:00AM Writing Fast Tests Against Enterprise Rails 60min
 10:00AM Overdoing it in Python 45min
 10:45AM Lua for the Masses 30min
@@ -62,8 +64,9 @@ User Interface CSS in Rails Apps 30min
 04:00PM Ruby vs. Clojure for Back-End Development 30min
 04:30PM User Interface CSS in Rails Apps 30min
 05:00PM Networking Event
-
+```
 #### Track 2:
+```
 09:00AM Communicating Over Distance 60min
 10:00AM Rails Magic 60min
 11:00AM Woah 30min
@@ -75,3 +78,4 @@ User Interface CSS in Rails Apps 30min
 03:00PM Ruby on Rails Legacy App Maintenance 60min
 04:00PM Rails for Python Developers lightning
 05:00PM Networking Event
+```
