@@ -64,31 +64,6 @@ class Conference private(val events: Seq[Event], restTime: Option[Int]) extends 
 
     for (i <- 0 until possibleDays) yield Track(i + 1, (morningSession(i) :+ Lunch) ++ (afternoonSession(i) :+ NetworkingEvent))
   }
-
-  @deprecated(message = "See tracks() method for scala version")
-  def tracksJava(): Seq[Track] = {
-    /*
-    import scala.collection.JavaConverters._
-
-    val morningSession: util.List[util.List[Event]] = schedule(events.asJava, possibleDays, Rule.morningDuration, 0)
-    val morningSessionScala: mutable.Buffer[mutable.Buffer[Event]] = morningSession.asScala.map(_.asScala)
-
-    val mset = morningSessionScala.flatten.toSet
-    val over: Seq[Event] = Set(events: _*) &~ mset toSeq
-    val afternoonSession = schedule(over.asJava, possibleDays, Rule.afternoonMinDuration, Rule.afternoonDurationFactor)
-    val afternoonSessionScala: mutable.Buffer[mutable.Buffer[Event]] = afternoonSession.asScala.map(_.asScala)
-
-    val tracks = mutable.Buffer.empty[Track]
-
-    for (i <- morningSessionScala.indices) {
-      val track = Track(i + 1, morningSessionScala(i).:+(Lunch) ++ afternoonSessionScala(i).:+(NetworkingEvent))
-      tracks.+=(track)
-    }
-    tracks
-  }
-  */
-    ???
-  }
 }
 
 object Conference {
